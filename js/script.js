@@ -49,20 +49,58 @@ const btnLeft = document.querySelector('.left');
 const btnRight = document.querySelector('.right');
 let counter = 0;
 
-drawItem(images);
-drawThumbs(images);
 
-function drawItem(images){
+addActiveToItems();
+addActiveToThumbs();
+
+
+
+
+
+
+
+function drawItems(){
     items.forEach((item) => {
-        const image = `<img class="item" src="img/${item.link}" alt="${item.title}">`;
+        const image = `<div class="item">
+
+        <img src="img/${item.link}" alt="${item.title}">
+
+        <h2 class="title">
+            ${item.title}
+        </h2>
+
+        <p class="desc">
+            ${item.desc}
+        </p>
+        </div>`;
         images.innerHTML += image;
     })
 }
 
-function drawThumbs(images){
+
+
+function drawThumbs(){
     items.forEach((item) => {
-        const thumb = `<img src="img/${item.link}" alt="${item.title}" class="item">`;
+        const thumb = `<img src="img/${item.link}" alt="${item.title}" class="thumb-item">`;
         thumbs.innerHTML += thumb;
+        console.log('questa è drawThumbs');
     })
 }
+
+
+
+function addActiveToItems(){
+    drawItems();
+    const item = document.querySelector('.item');
+    item.classList.add('active');
+}
+
+
+function addActiveToThumbs(){
+    drawThumbs();
+    const thumbitem = document.querySelector('.thumb-item');
+    thumbitem.classList.add('thumb-active');
+    console.log('questa è addactivetothumbs');
+}
+
 

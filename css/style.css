@@ -45,7 +45,7 @@ img{
     display: block;
 }
 .images .title, .images .desc{
-    padding: 20px;
+    padding: 10px;
     position: absolute;
 }
 .images .title{
@@ -54,7 +54,7 @@ img{
 }
 .images .desc{
     right: 10px;
-    top: 70px;
+    top: 60px;
 }
 
 
@@ -64,11 +64,11 @@ img{
     height:25%;
     background-color: black;
 }
-.thumbs .item{
+.thumb-item{
     width: 20%;
     filter: brightness(.6);
 }
-.thumbs .item.active{
+.thumb-active{
     border: 2px solid white;
     filter: brightness(1);
 }

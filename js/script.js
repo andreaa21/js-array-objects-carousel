@@ -15,7 +15,7 @@ E se volessi un bottone per invertire la “direzione” del carosello?
 
 */
 
-const images = [
+const items = [
     {
         title: 'Argentina',
         desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perspiciatis',
@@ -23,22 +23,46 @@ const images = [
     },
     {
         title: 'Chile',
-        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perspiciatis',
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit',
         link: 'chile.jpg'
     },
     {
         title: 'Colombia',
-        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perspiciatis',
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores',
         link: 'colombia.jpg'
     },
     {
         title: 'Peru',
-        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perspiciatis',
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing',
         link: 'peru.jpg'
     },
     {
         title: 'Sweden',
-        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perspiciatis',
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perspiciatis parole in latino',
         link: 'sweden.jpg'
     }
 ]
+
+const images = document.querySelector('.images');
+const thumbs = document.querySelector('.thumbs');
+const btnLeft = document.querySelector('.left');
+const btnRight = document.querySelector('.right');
+let counter = 0;
+
+drawItem(images);
+drawThumbs(images);
+
+function drawItem(images){
+    items.forEach((item) => {
+        const image = `<img class="item" src="img/${item.link}" alt="${item.title}">`;
+        images.innerHTML += image;
+    })
+}
+
+function drawThumbs(images){
+    items.forEach((item) => {
+        const thumb = `<img src="img/${item.link}" alt="${item.title}" class="item">`;
+        thumbs.innerHTML += thumb;
+    })
+}
+

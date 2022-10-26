@@ -10,6 +10,7 @@
 
 body{
     background-color: cornflowerblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 img{
@@ -32,11 +33,31 @@ img{
 }
 .images{
     height: 75%; 
-    background-color: aqua;
+    background-color: brown;
+    color: white;
+    position: relative;
 }
 .images .item{
     object-fit: cover;
+    display: none;
 }
+.images .item.active{
+    display: block;
+}
+.images .title, .images .desc{
+    padding: 20px;
+    position: absolute;
+}
+.images .title{
+    right: 10px;
+    top: 0;
+}
+.images .desc{
+    right: 10px;
+    top: 70px;
+}
+
+
 .thumbs{
     display: flex;
     position: relative;

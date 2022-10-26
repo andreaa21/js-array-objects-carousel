@@ -3,3 +3,79 @@
     border: 0;
     box-sizing: border-box;
 }
+
+.debug{
+    background-color: rgba(255, 0, 0, .25);
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width:  900px;
+    height: 500px;
+}
+.images{
+    height: 75%; 
+    background-color: aqua;
+}
+.images .item{
+    object-fit: cover;
+}
+.thumbs{
+    display: flex;
+    position: relative;
+    height:25%;
+    background-color: black;
+}
+.thumbs .item{
+    width: 20%;
+    filter: brightness(.6);
+}
+.thumbs .item.active{
+    border: 2px solid white;
+    filter: brightness(1);
+}
+
+
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 50%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 999;
+}
+.btn:hover{
+    opacity: 1;
+}
+.left{
+    position: absolute;
+    left: 15px;
+    top: 43%;
+}
+.right{
+    position: absolute;
+    right: 15px;
+    top: 43%;
+}

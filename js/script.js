@@ -14,3 +14,31 @@ Sperimentiamo attraverso l’uso delle timing functions anche una funzionalità 
 E se volessi un bottone per invertire la “direzione” del carosello?
 
 */
+
+const images = [
+    {
+        title: 'Argentina',
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perspiciatis',
+        link: 'argentina.jpg'
+    },
+    {
+        title: 'Chile',
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perspiciatis',
+        link: 'chile.jpg'
+    },
+    {
+        title: 'Colombia',
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perspiciatis',
+        link: 'colombia.jpg'
+    },
+    {
+        title: 'Peru',
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perspiciatis',
+        link: 'peru.jpg'
+    },
+    {
+        title: 'Sweden',
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perspiciatis',
+        link: 'sweden.jpg'
+    }
+]
